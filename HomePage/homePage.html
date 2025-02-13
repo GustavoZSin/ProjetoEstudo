@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geração de Provas</title>
+    <link rel="stylesheet" href="/Common/styles.css">
+    <link rel="stylesheet" href="/HomePage/homePage.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Logo da aplicação" id="logo">
+        <h1>Geração de Prova:</h1>
+    </header>
+
+    <main>
+        <form>
+            <p>Seleciona as categorias da prova:</p>
+            <div style="overflow-y:scroll; width:100%; height:100px;">
+                <input type="checkbox" id="materia1" name="materia1" value="Português">
+                <label for="materia1">Português</label><br>
+                <input type="checkbox" id="materia2" name="materia2" value="Matemática">
+                <label for="materia2">Matemática</label><br>
+                <input type="checkbox" id="materia3" name="materia3" value="História">
+                <label for="materia3">História</label>
+            </div>
+
+            <label for="qtd_questoes">Quantidade de Questões</label>
+            <input type="number" maxlength="50" id="qtd_questoes" name="qtd_questoes" placeholder="Ex: 20"><br>
+
+            <label for="nome_prova">Nome da Prova:</label>
+            <input type="text" maxlength="50" id="nome_prova" name="nome_prova" placeholder="Prova de Ciências"><br>
+            
+            <button>Gerar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="paragrafo-footer">&copy 2025 - Projeto de Estudos. Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

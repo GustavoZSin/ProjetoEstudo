@@ -1,0 +1,14 @@
+form {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px;
+    padding: 1.2rem;
+    text-align: center;
+
+}
+
+button {
+    align-items: center;
+    font-size: 30px;
+}

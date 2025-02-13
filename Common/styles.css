@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
