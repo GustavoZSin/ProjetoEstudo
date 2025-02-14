@@ -7,12 +7,31 @@
     <title>Geração de Provas</title>
     <link rel="stylesheet" href="Common/styles.css">
     <link rel="stylesheet" href="HomePage/homePage.css">
+    <script src="Common/script.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="staticClass">
         <img src="assets/logo.png" alt="Logo da aplicação" id="logo">
         <h1>Geração de Prova:</h1>
+        <div class="dropDownMenu">
+            
+            <a href="index.html" class="dropDownMenuItems">
+                <ion-icon name="document-text"></ion-icon>
+                Geração de prova
+            </a>  
+
+            <a href="./Pages/RegisterCategories/registerCategories.html" class="dropDownMenuItems">
+                <ion-icon name="bookmarks"></ion-icon>
+                Cadastro de categorias
+            </a>   
+            
+            <a href="./Pages/RegisterQuestions/registerQuestions.html" class="dropDownMenuItems">
+                <ion-icon name="help-circle"></ion-icon>
+                Cadastro de questões
+            </a>  
+
+        </div>
     </header>
 
     <main>
@@ -40,6 +59,9 @@
     <footer>
         <p class="paragrafo-footer">&copy 2025 - Projeto de Estudos. Todos os direitos reservados</p>
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
