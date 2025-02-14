@@ -1,14 +1,63 @@
-form {
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 50%;
-    margin: 20px;
-    padding: 1.2rem;
-    text-align: center;
+body{
+    background-color: #f2f2f2;
+}
 
+.limiter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 30vw;
+    height: auto;
+    background: #f8c6c6;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    border:none;
+    margin-bottom: 15px;
+    overflow-y:auto;
+    gap: 1px;
+    height: 130px;
+    max-height: 150px;
+}
+
+.categorias legend {
+    margin-bottom: 1vh;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campos_detalhes input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
 }
 
 button {
-    align-items: center;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #8aff88;
+    padding: 3px;
     font-size: 30px;
+    width: 100%;
+}
+
+button:hover {
+    background: #7ed67e;
 }

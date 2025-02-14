@@ -35,25 +35,30 @@
     </header>
 
     <main>
-        <form>
-            <p>Seleciona as categorias da prova:</p>
-            <div style="overflow-y:scroll; width:100%; height:100px;">
-                <input type="checkbox" id="materia1" name="materia1" value="Português">
-                <label for="materia1">Português</label><br>
-                <input type="checkbox" id="materia2" name="materia2" value="Matemática">
-                <label for="materia2">Matemática</label><br>
-                <input type="checkbox" id="materia3" name="materia3" value="História">
-                <label for="materia3">História</label>
+        <div class="limiter">
+            <div class="container">
+                <form>
+                    <fieldset class="categorias">
+                        <legend>Selecione as Categorias Desejadas:</legend>
+                        <label for="cat1">
+                            <input type="checkbox" id="cat1" name="cat1" value="Português">Português</label>
+                        <label for="cat2">
+                            <input type="checkbox" id="cat2" name="cat2" value="Matemática">Matemática</label>
+                        <label for="cat3">
+                            <input type="checkbox" id="cat3" name="cat3" value="História">História</label>
+                    </fieldset>
+
+                    <div class="campos_detalhes">
+                        <label for="quantidade">Quantidade de Questões</label>
+                        <input type="number" id="quantidade" value="20"><br>
+
+                        <label for="nome">Nome da Prova:</label>
+                        <input type="text" id="nome" placeholder="Prova de Ciências"><br>
+                    </div>
+                    <button>Gerar</button>
+                </form>
             </div>
-
-            <label for="qtd_questoes">Quantidade de Questões</label>
-            <input type="number" maxlength="50" id="qtd_questoes" name="qtd_questoes" placeholder="Ex: 20"><br>
-
-            <label for="nome_prova">Nome da Prova:</label>
-            <input type="text" maxlength="50" id="nome_prova" name="nome_prova" placeholder="Prova de Ciências"><br>
-            
-            <button>Gerar</button>
-        </form>
+        </div>
     </main>
 
     <footer>
